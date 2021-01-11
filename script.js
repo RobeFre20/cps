@@ -16,6 +16,7 @@ var tempo = new Timer({
 })
 
 box1.addEventListener('click', function () {
+	document.getElementById('btn').disabled = true
     numero.style.display = 'block'
     var ris = 1 + parseInt(numero.innerHTML, 10)
     numero.innerHTML = ris
@@ -43,6 +44,7 @@ var tempo2 = new Timer({
 
 box2.addEventListener('contextmenu', e => {
     e.preventDefault()
+	document.getElementById('btn').disabled = true
     numero2.style.display = 'block'
     var ris = 1 + parseInt(numero2.innerHTML, 10)
     numero2.innerHTML = ris
